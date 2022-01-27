@@ -1,0 +1,46 @@
+input INSERT_YOUR_CARD
+
+loop while INSERT_YOUR_CARD <= 0
+
+if INSERT_YOUR_CARD = 0 then
+input INSERT_YOUR_CARD
+end if
+
+if INSERT_YOUR_CARD = 1 then
+INSERT_YOUR_CARD = 1
+end if
+
+end loop
+
+
+
+input ENTER_PIN_CODE
+
+loop while ENTER_PIN_CODE != 1234
+
+if ENTER_PIN_CODE != 1234 then
+input ENTER_PIN_CODE
+end if
+
+if ENTER_PIN_CODE = 1234 then
+ENTER_PIN_CODE = 1234
+end if
+
+end loop
+
+
+
+input ENTER_AMOUNT_OF_MONEY_TO_WITHDRAW
+
+loop while ENTER_AMOUNT_OF_MONEY_TO_WITHDRAW > 100
+
+if ENTER_AMOUNT_OF_MONEY_TO_WITHDRAW > 100 then
+input NOT_ENOUGH_MONEY_ON_CARD_BALANCE_100
+ENTER_AMOUNT_OF_MONEY_TO_WITHDRAW = NOT_ENOUGH_MONEY_ON_CARD_BALANCE_100
+end if
+
+if ENTER_AMOUNT_OF_MONEY_TO_WITHDRAW <= 100 then
+output "Take your money"
+end if
+
+end loop
